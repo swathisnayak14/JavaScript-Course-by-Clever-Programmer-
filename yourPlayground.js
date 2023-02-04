@@ -74,9 +74,9 @@ const prompt = require("prompt-sync")();
 
 //it has 0 arguments
 //does: it logs out name to the console
-function sayMyName() {
-  console.log("Swathi");
-}
+// function sayMyName() {
+//   console.log("Swathi");
+// }
 
 //sayMyName()
 
@@ -84,46 +84,46 @@ function sayMyName() {
 
 //it has 1 arguments
 //does: it logs out name to the console
-function sayMyName2(name) {
-  console.log(name);
-}
+// function sayMyName2(name) {
+//   console.log(name);
+// }
 
 //sayMyName2('Hey there!')
 
 //it has 1 arguments
 //does: it logs out name to the console
-function greeting(name) {
-  greet = "hi " + name + ",nice to meet you";
-  console.log(greet);
-}
+// function greeting(name) {
+//   greet = "hi " + name + ",nice to meet you";
+//   console.log(greet);
+// }
 
 //greeting('Lance')
 
 //using template literals to avoid concatenations
 
-function greeting(name) {
-  //template literals
-  greet = `hi ${name}, Nice to meet you!`;
+// function greeting(name) {
+//   //template literals
+//   greet = `hi ${name}, Nice to meet you!`;
 
-  console.log(greet);
-}
-//greeting('Lance')
+//   console.log(greet);
+// }
+// //greeting('Lance')
 
-function sum(a, b) {
-  //return
+// function sum(a, b) {
+//   //return
 
-  return a + b;
-}
+//   return a + b;
+// }
 
 // num=sum(1,2)
 // console.log(num)
 
-function foodTotal(food, tip) {
-  const tipPercentage = Number(tip / 100);
-  const tipAmount = food * tipPercentage;
-  const total = sum(food, tip);
-  return total;
-}
+// function foodTotal(food, tip) {
+//   const tipPercentage = Number(tip / 100);
+//   const tipAmount = food * tipPercentage;
+//   const total = sum(food, tip);
+//   return total;
+// }
 
 //console.log(foodTotal(100,20))
 //-------------------------------------------------
@@ -131,26 +131,26 @@ function foodTotal(food, tip) {
 //ES6 way
 //arrow  function (=>)
 //arrow  function with explicit return
-const sumArrow = (a,b)=>{
-    return a+b
-}
+// const sumArrow = (a,b)=>{
+//     return a+b
+// }
 
 //arrow  function with implicit return(doesn't have squigglies)
-const summArrow2 =(a,b)=> a+b
+//const summArrow2 =(a,b)=> a+b
 
 //console.log(summArrow2(30,50))
 //--------------------------------------------------
 
 //ARRAYS
 
-const groceries=["banana","apple","orange","pear"]
+//const groceries=["banana","apple","orange","pear"]
 // console.log(groceries)
 // console.log(groceries[0])
 // console.log(groceries[3])
 
 //ARRAY METHODS
 //1.push
-groceries.push('cherry')
+//groceries.push('cherry')
 //console.log(groceries)
 
 //2.slice
@@ -171,10 +171,11 @@ groceries.push('cherry')
 
 //OBJECTS{}=key-value pairs
 //here person is the object
-const person={
-    name:"Leonardo",
-    shirt:"white"
-}
+// const person={
+//     name:"Leonardo",
+//     shirt:"white"
+// }
+
 //dot notation of accessing objects
 // console.log(person.name)
 // console.log(person.shirt)
@@ -185,16 +186,16 @@ const person={
 
 
 //assigning object
-person.phone='6715245561'
+// person.phone='6715245561'
 //console.log(person.phone)
 
 
 //console.log(person)
 
-const person2={
-    name:"Qazi",
-    shirt:"black"
-}
+// const person2={
+//     name:"Qazi",
+//     shirt:"black"
+// }
 
 // console.log(person2.name)
 // console.log(person2.shirt)
@@ -206,17 +207,114 @@ const person2={
 //ES6 way
 //objects
 
-const introducer=(name,shirt) =>{
-    const person3={
-        name:name,
-        shirt:shirt,
-        assets:100000,
-        liabilities:50000
-    }
-    const intro= `Hi! My name is ${person3.name} and the color of my shirt is ${person3.shirt} and my net worth is ${person3.assets-person3.liabilities} USD`
+// const introducer=(name,shirt) =>{
+//     const person3={
+//         name:name,
+//         shirt:shirt,
+//         assets:100000,
+//         liabilities:50000
+//     }
+//     const intro= `Hi! My name is ${person3.name} and the color of my shirt is ${person3.shirt} and my net worth is ${person3.assets-person3.liabilities} USD`
 
-    return intro
-}
+//     return intro
+// }
 
 //console.log(introducer('Swathi','blue'))
-console.log(introducer("Leo","white",))
+//console.log(introducer("Leo","white",))
+
+
+
+// const introducer2=(name,shirt) =>{
+//     const person3={
+//         name:name,
+//         shirt:shirt,
+//         assets:100000,
+//         liabilities:50000,
+//         netWorth:assets-liabilities //error
+//     }
+//     const intro= `Hi! My name is ${person3.name} and the color of my shirt is ${person3.shirt} and my net worth is ${person3.netWorth} USD`
+
+//     return intro
+// }
+
+//using methods(inside function)
+
+// const introducer3=(name,shirt) =>{
+//     const person3={
+//         name:name,
+//         shirt:shirt,
+//         assets:100000,
+//         liabilities:50000,
+//         netWorth:function(){
+//             return this.assets-this.liabilities
+//         }
+
+//     }
+//     const intro= `Hi! My name is ${person3.name} and the color of my shirt is ${person3.shirt} and my net worth is ${person3.netWorth()} USD`
+
+//     return intro
+// }
+
+//console.log(introducer3("Swathi","yellow"))
+//----------------------------------------------------------------
+
+//FOR LOOPS
+
+//const fruits=["banana","apple","orange","pear"]
+
+// for(let i=0;i<fruits.length;i++){
+//     console.log(fruits[i])
+// }
+
+//advanced way of doing
+
+// for(const fruit of fruits)
+// {
+//     console.log(fruit)
+// }
+
+// const num=[1,2,3,4,5,6]
+// for(const n of num){
+//     console.log(n)
+// }
+
+
+//doubling a number
+// const num=[1,2,3,4,5,6]
+// for(const n of num){
+//      console.log(n*2)
+// }
+
+//putting the result in the array
+
+// const num=[1,2,3,4,5,6]
+// let result=[]
+// for(const n of num){
+//     result.push(n*2)
+// }
+// console.log(result)
+
+//respresenting in functions
+
+// const double=(numbers) =>{
+//     let result=[]
+//     for(const num of numbers){
+//         result.push(num*2)
+//     }
+//     return result
+// }
+
+//console.log(double([1,2,3,4,5,6]))
+
+
+//squaring for numbers
+
+// const square=(numbers) =>{
+//     let result=[]
+//     for(const num of numbers){
+//         result.push(num**2)
+//     }
+//     return result
+// }
+
+// console.log(square([1,2,3,4,5,6]))
