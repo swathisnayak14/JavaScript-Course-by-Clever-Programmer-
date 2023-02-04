@@ -318,3 +318,68 @@ const prompt = require("prompt-sync")();
 // }
 
 // console.log(square([1,2,3,4,5,6]))
+
+//-----------------------------------------
+//counting letters in a phrase
+// const howManyLetters=()=>{
+//     const phrase="Hey, can you come with me to the grocery store?"
+
+//     for(letter in phrase){
+//         console.log(letter)
+//     }
+// }
+
+// howManyLetters()
+
+//but should start from 1 not 0
+// const howManyLetters=()=>{
+//     let result=0;
+//     const phrase="Hey, can you come with me to the grocery store?"
+
+//     for(letter in phrase){
+//         console.log(Number(letter)+1)
+//         result=Number(letter)+1
+//     }
+//     return {result}
+// }
+
+// console.log(howManyLetters())
+
+//pass the phrase while calling function
+
+// const howManyLetters=(phrase)=>{
+//     let result=0;
+//     for(letter in phrase){
+//         console.log(Number(letter)+1)
+//         result=Number(letter)+1
+//     }
+//     return {result}
+// }
+
+// const phrase="Hey, can you come with me to the grocery store?"
+// console.log(howManyLetters(phrase))
+
+
+//Take input from the user
+
+// const howManyLetters=(phrase)=>{
+//     let result=0;
+//     for(letter in phrase){
+//         console.log(Number(letter)+1)
+//         result=Number(letter)+1
+//     }
+//     return {result}
+// }
+
+// const phrase=prompt("Enter the sentence: ")
+// console.log(howManyLetters(phrase))
+
+
+//simplest way:using length
+
+// const howManyLetters=(phrase)=>{
+//     return{result:phrase.length}
+// }
+
+// const phrase=prompt("Enter the sentence: ")
+// console.log(howManyLetters(phrase))
