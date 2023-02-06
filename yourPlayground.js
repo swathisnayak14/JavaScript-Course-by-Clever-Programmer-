@@ -383,3 +383,58 @@ const prompt = require("prompt-sync")();
 
 // const phrase=prompt("Enter the sentence: ")
 // console.log(howManyLetters(phrase))
+
+//sum up all numbers in array
+
+// const sumArray=(numbers)=>{
+//     let result =0;
+
+//     for(const number of numbers){
+//         result=result+number
+//     }
+//     return{result}
+// }
+
+// const nums=[1,2,3,4,5]
+// console.log(sumArray(nums))
+
+
+//max number in an array
+
+// const maxNum=(numbers)=>{
+//     let result=numbers[0];
+//     for(const number of numbers){
+//         if(number>result){
+//             result=number
+//         }
+//     }
+//     return result
+// }
+
+// const nums=[61,3,5,680,2]
+// console.log(maxNum(nums))
+
+
+//frequency in a phrase
+
+// const letterFrequency=(phrase)=>{
+//     let frequency={}
+//     for(const letter of phrase)
+//     {
+//         //check if letter exists in frequency
+//         if(letter in frequency){
+//             //increment the value by +1
+//             frequency[letter]++
+//         }
+//         else{
+//             //set value to 1
+//             frequency[letter]=1
+//         }
+//     }
+//     return frequency
+// }
+
+// console.log(letterFrequency('Swathi'))
+
+//you can use incremental operators
+//++,--,+=
