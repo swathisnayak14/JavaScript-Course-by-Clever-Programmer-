@@ -505,3 +505,23 @@ const doubleMap=(numbers)=>{
 
 // const nums=[1,2,3,4,5,6]
 // console.log(nums.filter(num=>num>4||num<2))
+
+//flitering for array of objects
+
+const actors=[
+    {name:'johny',netWorth:2000000},
+    {name:'amber',netWorth:10},
+    {name:'leo',netWorth:10000000},
+]
+
+let result=actors.filter(actor=>actor.netWorth>10)
+console.log(result)
+
+//yourPlayground.innerHTML=`<h1>${result[0].name}</h1>`
+
+let names=result.map(actor=>actor.name).join(',')
+console.log(names)
+
+//yourPlayground.innerHTML=`<h1>${names}</h1>`
+
+
