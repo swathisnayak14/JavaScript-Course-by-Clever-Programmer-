@@ -417,24 +417,91 @@ const prompt = require("prompt-sync")();
 
 //frequency in a phrase
 
-// const letterFrequency=(phrase)=>{
-//     let frequency={}
-//     for(const letter of phrase)
-//     {
-//         //check if letter exists in frequency
-//         if(letter in frequency){
-//             //increment the value by +1
-//             frequency[letter]++
-//         }
-//         else{
-//             //set value to 1
-//             frequency[letter]=1
-//         }
-//     }
-//     return frequency
-// }
+const letterFrequency=(phrase)=>{
+    let frequency={}
+    for(const letter of phrase)
+    {
+        //check if letter exists in frequency
+        if(letter in frequency){
+            //increment the value by +1
+            frequency[letter]++
+        }
+        else{
+            //set value to 1
+            frequency[letter]=1
+        }
+    }
+    return frequency
+}
 
 // console.log(letterFrequency('Swathi'))
 
 //you can use incremental operators
 //++,--,+=
+
+
+//word frequency
+
+// const wordFrequency=(phrase)=>{
+//     let frequency={}
+//     words=phrase.split(' ')
+//     for(const word of words){
+//         if(word in frequency){
+//             frequency[word]+=1
+//         }
+//         else{
+//             frequency[word]=1
+//         }
+//     }
+//     return frequency
+// }
+
+// console.log(wordFrequency('lol wat lol yo yo yo'))
+
+
+//simpler way
+
+const wordFrequency=(phrase)=>{
+    words=phrase.split(' ')
+    return letterFrequency(words)
+    
+}
+
+//const userInput=prompt('Write your sentence: ')
+// console.log(wordFrequency(userInput))
+
+//--------------------------------------------------
+
+//ARRAY METHODS
+
+//higher order functions
+
+//.map()
+
+
+//[1,2,3,4,5].map(number=>console.log(number))
+
+//doubling a number
+
+// let result=[1,2,3,4,5].map(number=>number*2)
+// console.log(result)
+
+//using .map() in function
+
+//doubling a number
+
+const doubleMap=(numbers)=>{
+    return numbers.map(number=>number*2)
+}
+
+//console.log(doubleMap([1,2,3,4]))
+
+//using .filter()
+
+// const nums=[1,2,3,4,5,6]
+// console.log(nums.filter(num=>num>3))
+
+//LOGICAL AND,OR
+
+// const nums=[1,2,3,4,5,6]
+// console.log(nums.filter(num=>num>4||num<2))
