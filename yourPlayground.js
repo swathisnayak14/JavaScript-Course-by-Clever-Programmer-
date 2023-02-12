@@ -508,20 +508,78 @@ const doubleMap=(numbers)=>{
 
 //flitering for array of objects
 
-const actors=[
-    {name:'johny',netWorth:2000000},
-    {name:'amber',netWorth:10},
-    {name:'leo',netWorth:10000000},
-]
+// const actors=[
+//     {name:'johny',netWorth:2000000},
+//     {name:'amber',netWorth:10},
+//     {name:'leo',netWorth:10000000},
+// ]
 
-let result=actors.filter(actor=>actor.netWorth>10)
-console.log(result)
+// let result=actors.filter(actor=>actor.netWorth>10)
+// console.log(result)
 
-//yourPlayground.innerHTML=`<h1>${result[0].name}</h1>`
+// //yourPlayground.innerHTML=`<h1>${result[0].name}</h1>`
 
-let names=result.map(actor=>actor.name).join(',')
-console.log(names)
+// let names=result.map(actor=>actor.name).join(',')
+// console.log(names)
 
 //yourPlayground.innerHTML=`<h1>${names}</h1>`
 
+//using .reduce()
+//SUM: Think it as reduce
+//reduce takes in a function as an argument
+//reduce loops and gives you back the accumulator
+
+// const nums=[1,2,3]
+// const result=nums.reduce(function(prev,curr){
+//     return prev+curr
+// })
+
+// console.log(result)
+
+
+//simpler way: using ES6 notation
+
+// const nums=[1,2,3]
+// const result=nums.reduce((prev,curr)=>prev+curr)
+// console.log(result)
+
+
+//feeding in a function as a parameter
+
+//summing the numbers of an array
+
+// function sum(a,b){
+//     return a+b
+// }
+
+// const nums=[1,2,3]
+// const result=nums.reduce(sum)
+// console.log(result)
+
+//product of the numbres in an array
+
+// function product(a,b)
+// {
+//     return a*b
+// }
+
+// const nums=[1,2,3,4]
+// const result=nums.reduce(product)
+// console.log(result)
+
+
+//summing all the networth
+
+// const actors=[
+//     {name:'johny',netWorth:2000000},
+//     {name:'amber',netWorth:10},
+//     {name:'leo',netWorth:10000000},
+// ]
+
+// console.log(actors.reduce((prev,curr)=>prev+curr.netWorth,0))
+//here 0 is a default parameter which is prev, so prev is 0 at the first
+
+//----------------------------------------------------------------------
+
+//DOM Manipulation
 
