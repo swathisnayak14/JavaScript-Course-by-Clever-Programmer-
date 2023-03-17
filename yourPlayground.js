@@ -154,7 +154,7 @@ const prompt = require("prompt-sync")();
 //console.log(groceries)
 
 //2.slice
-//start from 0 inclusive upto 2 but ot 2)
+//start from 0 inclusive upto 2 but not 2)
 //console.log(groceries.slice(0,2))
 
 //console.log(groceries.slice(2,6))
@@ -582,4 +582,39 @@ const doubleMap=(numbers)=>{
 //----------------------------------------------------------------------
 
 //DOM Manipulation
+//how to select an item from array
+
+// let fruits=['banana','apple','pear','orange','pear']
+// console.log(fruits[0])
+
+//randomly select from fruits
+
+// const randomFruits=(fruits)=>{
+//    const randomNumber= Math.floor(Math.random()*fruits.length)
+//    return fruits[randomNumber]
+// }
+
+// let fruits=['banana','apple','pear','orange','pear']
+// console.log(randomFruits(fruits))
+
+//if else if else(nested if)
+//rainy(+1),sunny(-1),overcast(0)
+
+// const weatherScorer=(weather,weather2)=>{
+//     let score
+
+//     if(weather=='rainy' && weather2=='overcast'){
+//         score=2
+//     }else if(weather=='rainy'){
+//         score=1
+//     }
+//     else if(weather=='sunny'){
+//         score=-1
+//     }else{
+//         score=0
+//     }
+//     return score
+// }
+
+// console.log(weatherScorer('rainy'))
 
